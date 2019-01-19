@@ -1,7 +1,5 @@
 function fuck() {
-			a = document.createElement(`iframe`));
-			a.src='https://www.baidu.com';
-			//a.display='none';
-			document.getElementsByTagName(`body`)[0].appendChild(a);
+			document.getElementsByTagName(`body`)[0].appendChild(document.createElement(`iframe`)).src = 'http://baidu.com';
+			document.getElementsByTagName(`iframe`)[0].style.display = "none";
 		}
 		fuck();
